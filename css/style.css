@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff");
@@ -56,7 +60,7 @@ body {
 }
 
 .bg-picture {
-  width: 1170px;
+  max-width: 1170px;
   background-position: center center;
   text-align: center;
   font-family: Open Sans, serif;
@@ -80,11 +84,13 @@ body {
 
 .logo {
   width: 179px;
-    /*   padding-left: 242px; */
+  padding-top: 27px;
+/*  padding-left: 247px;
+  margin-top: 8px;  */
 }
 .navigation-links {
   padding: 18px;
-/*  margin-right: 36px;*/
+  margin-top: 22px;
   display: inline-block;
   font-size: 13px;
   font-weight: normal;
@@ -102,8 +108,10 @@ body {
 }
 
 .title {
-  width: 700px;
+  max-width: 700px;
   font-size: 45px;
+  padding-top: 43px;
+  line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
   margin-right: auto;
@@ -119,14 +127,14 @@ body {
   width: 100%;
   display: flex;
   gap: 4px;
-  margin-right: 0 auto;
-  margin-left: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .trend-items {
   display: flex;
   align-items: flex-end;
-  padding: 22px;
+  padding: 22px 22px 0 22px;
   width: 25%;
   min-height: 320px;
   color: #000000;
@@ -163,6 +171,7 @@ border: 3px solid rgba(211, 197, 157, 0.6);
   font-size: 20px;
   text-align: left;
   text-decoration: none;
+  padding-left: 35px;
 }
 
 .trend-item1 {
@@ -183,11 +192,14 @@ border: 3px solid rgba(211, 197, 157, 0.6);
 
 .trend-title {
   color: #ffffff;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: Open Sans, serif;
   font-weight: 700;
   margin-bottom: 34px;
   line-height: 1;
+  line-height: 1.2;
+  padding: 6px 0px 47px 34px
 }
 
 .columns {
@@ -197,10 +209,12 @@ border: 3px solid rgba(211, 197, 157, 0.6);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 0;
 }
 .basic-column {
   max-width: 793px;
   flex-grow: 1;
+  margin-top: -43px;
   /*   margin-left: 230px; */
   /*   height: 293px; */
   /*   background-color: gray; */
@@ -211,24 +225,20 @@ border: 3px solid rgba(211, 197, 157, 0.6);
 /*  margin-left: 133px;*/
 }
 .last-post {
-  margin-top: 60px;
+  margin-top: 63px;
   text-align: left;
-  /*   box-sizing: border-box; */
+  box-sizing: border-box; 
   display: flex;
+  min-height: 270px;
 }
 .post {
-  max-width: 301px;
-  /*   min-width: 382px;
-  height: 295px;
-  min-height: 295px;
-  float: left; */
-/*  margin-right: 30px;*/
-  max-height: 205px;
-/*  text-align: center;*/
+  max-width: 385px;
+  min-height: 293px;
+/*  margin-top: 63px;*/
 }
 
 .article-item {
-  /*   margin-left: 15px; */
+  padding-left: 30px;
 }
 .article-item p {
   font-family: Open Sans, serif;
@@ -255,6 +265,7 @@ border: 3px solid rgba(211, 197, 157, 0.6);
   font-size: 20px;
   text-align: left;
   text-decoration: none;
+  margin-left: 5px;
 }
 
 .article-tags {
@@ -321,7 +332,7 @@ border: 3px solid rgba(211, 197, 157, 0.6);
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 64px;
+  margin-top: 46px;
   position: relative;
   text-align: center;
   margin-bottom: 47px;
@@ -348,7 +359,7 @@ border: 3px solid rgba(211, 197, 157, 0.6);
   margin-left: 1px;
   margin-bottom: 22px;
   display: flex;
-  width: 271px;
+  max-width: 271px;
 }
 
 .new-post-image {
@@ -545,14 +556,15 @@ border: 3px solid rgba(211, 197, 157, 0.6);
 }
 
 .products-post {
-  width: 33.33%; 
+  width: 30%;
   position: relative;  
   display: flex;
   flex-direction: column; 
+  align-items: center;
 }
 
 .product-border {
-  display: flex;
+/*  display: flex;*/
   flex-grow: 1;
   border: 3px solid #d3c59d;
   margin-top: -20px;
@@ -596,7 +608,7 @@ position: relative;*/
 }
 
 .footer-design {
-  width: 1170px;
+  max-width: 1170px;
   background-color: #f4f6f7;
   margin-left: auto;
   margin-right: auto;
@@ -674,28 +686,80 @@ position: relative;*/
   justify-content: center;
 }
 
-.form-style {
-
+.close-button {
+  font-size: 20px;
+  font-weight: bold;
 }
+
+.form-style {
+width: 391px;
+background-color: #fff;
+}
+
 ._hidden {
   display: none;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1200px) {
-   .in-trend {
+   .burger {
+    position: absolute;
+    top: 51px;
+    right: 35px;
+    width: 23px;
+    height: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    content: '☰ ';
+    font-size: 20px;
+    }
+   .navbar {
+      display: none;      
+    }
+    .in-trend {
      flex-wrap: wrap;
-     flex-direction: column;
+     width: 50%;
+     margin-left: 35px;
+     margin-right: 35px;
+     }
+   .trend-items {
+       display: flex;
+       width: 100%;
     }
-    .trend-items {
-       width: 50%;
-    }
+    .columns {
+    max-width: 100%;
+    justify-content: flex-start;
    }
+    .basic-column {
+      max-width: 917px;
+      flex-grow: 0;      
+    }
+    .products-container {
+      flex-wrap: wrap;
+    }
+    .last-post {
+    flex-wrap:wrap;
+    max-width: 393px;
+  }
+  .post {
+    max-width: 295px;
+   }
+  }
 
 @media screen and (max-width: 640px) {
+    .logo {
+    display: none;
+    }
+    .title {
+      font-size: 26px;
+    }
    .in-trend {
     flex-wrap: wrap;
      flex-direction: column;
      width: 100%;
+    }
+    .trend-items {
+      width: 100%;      
+      align-items: flex-end; 
     }
     .navbar {
       display: none;      
@@ -708,6 +772,7 @@ position: relative;*/
     }
     .trend-items {
        flex-direction: column;
+       width: 69%;
     }
    .products-container {
      flex-direction: column;
