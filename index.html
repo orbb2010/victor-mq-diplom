@@ -336,22 +336,20 @@
 
     <form action="" class="form-style">
       <label for="frequency">Как часто Вы заходите на сайт?</label>
-      <select name="frequency" id="">
+      <select name="frequency" id="" class="form-select-style">
       <option value="" selected>Почти каждый день</option>
       </select>
       <label for="email-subscribe-select-button">Вы подписаны на e-mail рассылку?</label>
+      <div class="form-logic">
       <input class="form-style-input" type="radio" name="email-subscribe-select-button" value="yes">Да
       <input class="form-style-input" type="radio" name="email-subscribe-select-button" value="no">Нет
+      </div>
       <label for="textarea-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-      <textarea class="testarea-style" type="" name="textarea-text" placeholder="Может быть, больше рецептов?">
-      <button>Отправить</button>
+      <textarea class="testarea-style" type="" name="textarea-text" placeholder="Может быть, больше рецептов?"></textarea>
+      <button class="form-send">Отправить</button>
     </form>
   </div>
   </div>
 </body>
 
 </html>
-
-<script>
-  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
