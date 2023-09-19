@@ -14,18 +14,21 @@
     <div class="container-header">
       <nav class="bg-picture">
         <a href="#0"><img src="svg/noemi-logo.svg" class="logo" alt="noemi-logo"></a>
-        <ul class="navbar">
-          <li><a href="#0" class="navigation-links">Главная</a></li>
-          <li><a href="#0" class="navigation-links">Посты</a></li>
-          <li><a href="#0" class="navigation-links">Статьи</a></li>
-          <li><a href="#0" class="navigation-links">Теги</a></li>
-          <li><a href="#0" class="navigation-links">Темы</a></li>
-          <li><a href="#0" class="navigation-links">Контакты</a></li>
+        <div class="navbar-links-div"><ul class="navbar">
+          <li class="navigation-links"><a href="#0" class="navigation-links">Главная</a></li>
+          <li class="navigation-links"><a href="#0" class="navigation-links">Посты</a></li>
+          <li class="navigation-links"><a href="#0" class="navigation-links">Статьи</a></li>
+          <li class="navigation-links"><a href="#0" class="navigation-links">Теги</a></li>
+          <li class="navigation-links"><a href="#0" class="navigation-links">Темы</a></li>
+          <li class="navigation-links"><a href="#0" class="navigation-links">Контакты</a></li>
         </ul>
-        <div class="burger">☰
+        </div>      
+
+        <a href="#0"><div class="burger">☰
 			<div class="visually-hidden">
 			Это кнопка для отображения меню!
 			</div>
+			</a>
         </div>
       </nav>
       <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
@@ -42,7 +45,7 @@
           </ul>
         </header>
         <h2 class="trend-title">
-          <a href="#0">Сейчас в тренде: сад на подоконнике</a>
+          <a class="trend-items-links" href="#0">Сейчас в тренде: сад на подоконнике</a>
         </h2>
       </div>
 
@@ -68,7 +71,7 @@
           </ul>
         </header>
         <h2 class="trend-title">
-          <a href="#0">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
+          <a class="trend-items-links" href="#0">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
         </h2>
       </div>
     </div>
@@ -81,7 +84,7 @@
           </ul>
         </header>
         <h2 class="trend-title">
-          <a href="#0">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a>
+          <a class="trend-items-links" href="#0">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a>
         </h2>
       </div>
     </div>
@@ -251,6 +254,8 @@
   <div class="products-container">
     <article class="products-post">
       <picture>
+         <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg" />
+         <source media="(max-width: 1200px)" srcset="images/shop-item-tablet1.jpg" />
         <img class="post" src="images/shop-item-desk1.jpg" alt="shop-item-desk1.jpg">
       </picture>
       <div class="product-border">
@@ -271,6 +276,8 @@
     </article>
     <article class="products-post">
       <picture>
+      	<source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg" />
+        <source media="(max-width: 1200px)" srcset="images/shop-item-tablet2.jpg" />
         <img class="post" src="images/shop-item-desk2.jpg" alt="shop-item-desk2.jpg">
       </picture>
       <div class="product-border">
@@ -291,6 +298,8 @@
     </article>
     <article class="products-post">
       <picture>
+      	<source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg" />
+        <source media="(max-width: 1200px)" srcset="images/shop-item-tablet3.jpg" />
         <img class="post" src="images/shop-item-desk3.jpg" alt="shop-item-desk3.jpg">
       </picture>
       <div class="product-border">
@@ -325,15 +334,13 @@
 
   <div class="form-background">
   <div class="form-wrp">
-  	<div class="close-button">
+  	<a href="#0"><div class="close-button">
 		<div class="visually-hidden">
 			Это кнопка для закрытия попап-окна!
 		</div>
-
-<!-- <svg fill="#000000" width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z"/></svg> -->
   	</div>
+  	</a>
     <h3 class="aside-titles products">Ваш фидбек</h3>
-
     <form action="" class="form-style">
       <label for="frequency">Как часто Вы заходите на сайт?</label>
       <select name="frequency" id="" class="form-select-style">
